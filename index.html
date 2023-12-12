@@ -1,42 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/app.css">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/app.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="inner-conatainer">
+        <div class="left-box">
+          <h1>Bill</h1>
+          <form action="">
+            <div class="input-group">
+              <label for="bill">
+                <span class="dollar-sign">$</span>
+                <input
+                  type="number"
+                  name="bill"
+                  id="bill"
+                  min="0"
+                  placeholder="0"
+                />
+              </label>
+            </div>
+          </form>
 
-  Bill
+          <p class="select">Select Tip %</p>
+          <div class="num-btn">
+            <button class="num">5%</button>
+            <button class="num">10%</button>
+            <button class="num">15%</button>
+            <button class="num">25%</button>
+            <button class="num">50%</button>
+            <button class="num">40%</button>
+          </div>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+          <div class="people">
+            <p>Number Of People</p>
+            <form action="">
+              <label for="num-people"></label>
+              <input
+                type="number"
+                name="num-people"
+                min="0"
+                placeholder="0"
+                id="people"
+              />
+            </form>
+          </div>
+        </div>
 
-  Number of People
+        <div class="right-box">
+          <div class="tip-amount">
+            <div class="tip-text">
+              <p>Tip Amount</p>
+              <span>/ person</span>
+            </div>
+            <div class="amount-fig"><p>$0.00</p></div>
+          </div>
+          <div class="tip-total">
+            <div class="total-desc">
+              <p>Total</p>
+              <span>/ person</span>
+            </div>
+            <div class="total-fig"><p>$0.00</p></div>
+          </div>
 
-  Tip Amount
-  / person
+          <!--reset button-->
+          <button class="reset-btn" id="reset-btn" type="reset">Reset</button>
+        </div>
+      </div>
+    </main>
 
-  Total
-  / person
-
-  Reset
-  
-  <script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
