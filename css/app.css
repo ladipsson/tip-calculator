@@ -46,7 +46,17 @@ body {
   color: var(--DarkGrayishCyan);
 }
 
+.input-group {
+    position: relative;
+}
 
+.input-group span {
+    position: absolute;
+}
+
+.input-group input, .people input {
+    text-align: right;
+}
 
 
 
