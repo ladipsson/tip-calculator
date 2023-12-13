@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --strongCyan: hsl(172, 67%, 45%);
+  --veryDarkCyan: hsl(183, 100%, 15%);
+  --DarkGrayishCyan: hsl(186, 14%, 43%);
+  --GrayishCyan: hsl(184, 14%, 56%);
+  --lightGrayishCyan: hsl(185, 41%, 84%);
+  --veryLightGrayishCyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+  --formInputSize: 24px;
+  --weights: 700;
+  --fontPrimary: "Space Mono", monospace;
+}
+
+body {
+  width: 100%;
+  background-color: var(--lightGrayishCyan);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--fontPrimary);
+}
+
+.inner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  gap: 2rem;
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+.left-box h1 {
+  font-size: 0.8rem;
+  color: var(--DarkGrayishCyan);
+}
+
+
+
+
+
+
+
+
+/*right box styles*/
+.right-box {
+  background-color: var(--veryDarkCyan);
+  padding: 1.5rem;
+  width: 15rem;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.tip-amount,
+.tip-total {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.tip-total {
+    gap: 3.7rem;
+}
+.tip-text p span,
+.total-desc p span {
+  font-size: 0.6rem;
+  color: var(--GrayishCyan);
+}
+.tip-text p,
+.total-desc p {
+  font-size: 0.6rem;
+  color: var(--veryLightGrayishCyan);
+}
+
+.amount-fig p,
+.total-fig p {
+  font-size: 1.7rem;
+  color: var(--strongCyan);
+}
+
+.reset-btn {
+    margin-top: 5rem;
+    width: 100%;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    font-size: 0.7rem;
+    padding: 0.5rem 0;
+    font-weight: 700;
+    border-radius: 3px;
+    background-color: var(--strongCyan);
+    color: var(--veryDarkCyan);
+    transition: 0.5s ease-in;
+}
+
+.reset-btn:hover {
+    background-color: var(--lightGrayishCyan);
+}
