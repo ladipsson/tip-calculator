@@ -28,7 +28,9 @@
           <form action="">
             <div class="input-group">
               <label for="bill"></label>
-              <span class="dollar-sign"><img src="images/icon-dollar.svg" alt=""></span>
+              <span class="dollar-sign"
+                ><img src="images/icon-dollar.svg" alt=""
+              /></span>
               <input
                 type="number"
                 name="bill"
@@ -52,15 +54,21 @@
           <div class="people">
             <p>Number Of People</p>
             <form action="">
-              <label for="num-people"></label>
-              <span><img src="images/icon-person.svg" alt=""></span>
-              <input
-                type="number"
-                name="num-people"
-                min="0"
-                placeholder="0"
-                id="people"
-              />
+              <div class="input-group">
+                <label for="num-people"></label>
+                <span class="people-img"
+                  ><img src="images/icon-person.svg" alt=""
+                /></span>
+                <span class="error-message"></span>
+                <input
+                  type="number"
+                  name="num-people"
+                  min="0"
+                  placeholder="0"
+                  id="people"
+                  required
+                />
+              </div>
             </form>
           </div>
         </div>

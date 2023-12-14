@@ -33,7 +33,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
+  /* flex-basis: 50%; */
+  flex: 1 1 0;
   gap: 2rem;
   background-color: var(--white);
   padding: 2rem;
@@ -41,22 +42,80 @@ body {
   margin: 0 auto;
 }
 
+.left-box {
+    width: 100%;
+    height: 100%;
+}
 .left-box h1 {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: var(--DarkGrayishCyan);
 }
 
 .input-group {
     position: relative;
+    margin-bottom: 1.2rem;
 }
 
-.input-group span {
+.input-group span, .people-img {
     position: absolute;
+    top: 8px;
+    left: 10px;
+    /* width: 5px; */
+}
+
+.dollar-sign img, .people-img img {
+    width: 0.6rem;
 }
 
 .input-group input, .people input {
     text-align: right;
+    font-size: var(--formInputSize);
+    font-family: var(--fontPrimary);
+    /* padding: 2px; */
+    width: 100%;
+    border: 2px solid;
+    border-color: var(--strongCyan);
+    border-radius: 4px;
+    color: var(--veryDarkCyan);
+    font-weight: 700;
 }
+
+.input-group input, .people input :focus {
+    border-color: var(--strongCyan);
+}
+
+.select, .people p {
+    font-size: 0.7rem;
+    color: var(--GrayishCyan);
+}
+
+.people {
+    margin-top: 1.2rem;
+}
+
+.num-btn {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.num-btn .num {
+    cursor: pointer;
+    border: none;
+    background-color: var(--veryDarkCyan);
+    padding: 7px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 4px;
+    font-family: var(--fontPrimary);
+    color: var(--white);
+    transition: 0.3s ease-in;
+}
+
+.num:hover {
+    background-color: var(--strongCyan);
+}
+
 
 
 
@@ -67,11 +126,15 @@ body {
 .right-box {
   background-color: var(--veryDarkCyan);
   padding: 1.5rem;
-  width: 15rem;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
   border-radius: 12px;
 }
 
+.tip-amount {
+    margin-bottom: 1.5rem;
+}
 .tip-amount,
 .tip-total {
   display: flex;
@@ -100,13 +163,14 @@ body {
 }
 
 .reset-btn {
-    margin-top: 5rem;
+    margin-top: 6rem;
     width: 100%;
     text-transform: uppercase;
     cursor: pointer;
     border: none;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     padding: 0.5rem 0;
+    font-family: var(--fontPrimary);
     font-weight: 700;
     border-radius: 3px;
     background-color: var(--strongCyan);
